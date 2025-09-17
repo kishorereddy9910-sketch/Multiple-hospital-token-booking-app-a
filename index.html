@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="te">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multi-Hospital Token Booking - Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>హాస్పిటల్ టోకెన్ బుకింగ్ (Demo)</h1>
+    <p>సింపుల్ ప్రోటోటైప్ — Firebase కన్ఫిగ్ చేయకూడదు అయితే localStorage లో సేవ్ అవుతుంది.</p>
+
+    <label>పేరు: <input id="patientName" placeholder="మీ పేరు" /></label><br/>
+    <label>ఫోన్: <input id="patientPhone" placeholder="Phone"/></label><br/>
+
+    <label>హాస్పిటల్: 
+      <select id="hospitalSelect"></select>
+    </label><br/>
+
+    <label>డిపార్ట్‌మెంట్:
+      <select id="deptSelect"></select>
+    </label><br/>
+
+    <button id="bookBtn">బుక్ చేసుకోండి</button>
+
+    <h2>మీ టోకెన్లు</h2>
+    <ul id="tokensList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
